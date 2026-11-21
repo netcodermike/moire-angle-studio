@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rotate two line screens to explore geometric interference patterns.">
+  <title>Moiré Angle Studio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<main>
+  <div class="heading">
+    <div><h1>Moiré Angle Studio</h1><p>Rotate two line screens to explore geometric interference patterns.</p></div>
+    <a href="https://github.com/netcodermike/moire-angle-studio">Project source ↗</a>
+  </div>
+  <div class="workspace">
+    <section class="panel stage" aria-label="Project workspace">
+      <canvas width="760" height="410" aria-label="Two overlapping line screens"></canvas>
+      <p id="reading" role="status"></p>
+    </section>
+    <section class="panel controls" aria-label="Controls">
+      <form id="settings"><label for="angle">Relative angle<output id="angle-value" for="angle"></output><input id="angle" type="range" min="0" max="40" value="5"></label><label for="pitch">Line pitch<output id="pitch-value" for="pitch"></output><input id="pitch" type="range" min="6" max="26" value="14"></label><p>The spacing measures the distance between two neighboring interference bands.</p></form>
+    </section>
+  </div>
+</main>
+</body>
+</html>
